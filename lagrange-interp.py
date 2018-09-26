@@ -19,6 +19,7 @@ while True:
     points+=[p1]
 print(points)
 P=Lagrange(points)
+print("\nLagrange equation :\n")
 print(P)
 
 import matplotlib.pyplot as plt
