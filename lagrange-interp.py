@@ -1,6 +1,6 @@
 from functools import reduce
-import sympy as sym
-X = sym.Symbol('X')
+from sympy import Symbol
+X = Symbol('X')
 
 def Lagrange(points):
     
@@ -23,7 +23,7 @@ print("\nLagrange equation :\n")
 print(P)
 
 import matplotlib.pyplot as plt
-import numpy as np
+from numpy import arange
 
 def graph(P,points):
     plt.plot([points[i][0] for i in range(len(points))], [points[i][1] for i in range(len(points))], 'ro')
@@ -32,7 +32,7 @@ def graph(P,points):
     xmin=min([points[i][0] for i in range(len(points))])-1
     xmax=max([points[i][0] for i in range(len(points))])+1
 
-    t1 = np.arange(xmin, xmax, 0.02)
+    t1 = arange(xmin, xmax, 0.02)
 
     def f(t):
         t2 = []
