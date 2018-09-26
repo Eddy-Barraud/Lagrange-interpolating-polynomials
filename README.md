@@ -7,6 +7,8 @@ It will draw a graph too.
 * Numpy
 * Matplotlib
 
+`pip install sympy numpy matplotlib`
+
 ## Usage example:
 ```
 $python lagrange-interp.py
